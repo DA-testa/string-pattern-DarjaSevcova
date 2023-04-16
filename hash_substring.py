@@ -27,7 +27,7 @@ def get_occurrences(pattern, text):
          if pattern == text[i:i+plen]:
             occurrences.append(i)
       if i < tlen - plen:
-         thash = thash - ord(text[i] + ord(text[i+plen])
+         thash = thash - ord(text[i]) + ord(text[i+plen])
          thash %= 101                      
     return occurrences
 

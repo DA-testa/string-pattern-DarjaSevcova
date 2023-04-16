@@ -4,17 +4,17 @@ def read_input():
     input_type = input()
     text = ""
     pattern = ""
-    if input_type == 'I':
+    if 'I' in input_type:
         pattern = input().strip()
         text = input().strip()
-    elif 'F' in text:
+    elif 'F' in input_type:
         name = input()
         if not 'a' in name:
             name = "test/"+name
-            n = open(name, "k")
-            pattern = n.readline().kstrip()
-            text = n.readline().kstrip()
-            return (pattern, text)
+            n = open(name, "r")
+            pattern = n.readline().rstrip()
+            text = n.readline().rstrip()
+    return (pattern, text)
 
 def print_occurrences(output):
     print(' '.join(map(str, output)))

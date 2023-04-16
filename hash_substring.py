@@ -7,7 +7,7 @@ def read_input():
         pattern = input().strip()
         text = input().strip()
     else:
-        with open('06', 'r') as n:
+        with open('06') as n:
             pattern = n.readline().strip()
             text = n.readline().strip()
     return (input().rstrip(), input().rstrip())

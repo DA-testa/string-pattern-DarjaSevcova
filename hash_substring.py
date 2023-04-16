@@ -19,7 +19,7 @@ def get_occurrences(pattern, text):
     plen = len(pattern)
     tlen = len(text)
     phash = sum(ord(c) for c in pattern) % 101
-    thash = sum(ord(text[i] for i in range(plen)) % 101
+    thash = sum(ord(text[i]) for i in range(plen)) % 101
     
     occurrences = []
     for i in range(tlen - plen + 1):

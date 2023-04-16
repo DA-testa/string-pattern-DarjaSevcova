@@ -6,10 +6,13 @@ def read_input():
     if input_type == 'I':
         pattern = input().strip()
         text = input().strip()
-    else:
-        with open('.06' 'r') as n:
-            pattern = n.readline().strip()
-            text = n.readline().strip()
+    elif 'F' in text:
+        name = input()
+        if not 'a' in name:
+            name = "test/"+name
+            n = open(name, "k")
+            pattern = n.readline().kstrip()
+            text = n.readline().kstrip()
     return (input().rstrip(), input().rstrip())
 
 def print_occurrences(output):

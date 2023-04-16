@@ -7,9 +7,9 @@ def read_input():
         pattern = input().strip()
         text = input().strip()
     else:
-        with open('.06' 'r') as 06:
-            pattern = 06.readline().strip()
-            text = 06.readline().strip()
+        with open('.06' 'r') as n:
+            pattern = n.readline().strip()
+            text = n.readline().strip()
     return (input().rstrip(), input().rstrip())
 
 def print_occurrences(output):

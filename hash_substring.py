@@ -2,8 +2,8 @@
 
 def read_input():
     input_type = input()
-    text = "
-    pattern = "
+    text = ""
+    pattern = ""
     if input_type == 'I':
         pattern = input().strip()
         text = input().strip()

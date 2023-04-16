@@ -8,7 +8,7 @@ def read_input():
         pattern = input().strip()
         text = input().strip()
     elif 'F' in input_type:
-        name = input()
+        name = "06"
         if not 'a' in name:
             name = "test/"+name
             n = open(name, "r")

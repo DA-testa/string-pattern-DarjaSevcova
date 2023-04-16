@@ -10,7 +10,7 @@ def read_input():
     elif 'F' in input_type:
         name = "06"
         if not 'a' in name:
-            name = "test/"+name
+            name = "test/06"+name
             n = open(name, "r")
             pattern = n.readline().rstrip()
             text = n.readline().rstrip()

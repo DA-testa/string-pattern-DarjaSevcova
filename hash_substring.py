@@ -13,7 +13,7 @@ def read_input():
             n = open(name, "k")
             pattern = n.readline().kstrip()
             text = n.readline().kstrip()
-    return (input().rstrip(), input().rstrip())
+            return (pattern, text)
 
 def print_occurrences(output):
     print(' '.join(map(str, output)))
